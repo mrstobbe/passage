@@ -7,9 +7,9 @@ This is just an experiment. Well, several experiments mixed into one:
   `select()`.
 * Provision of arbitrary events within the I/O pooling system that
   appropriately blocks for the right amount of time while still relying on
-  kernel I/O events to flow throw. Basically, synthetic events (timeout/
-  interval)should still fire on time, but use the underlying I/O poll mechanism
-  to wait until then.
+  kernel I/O events to flow through. Basically, synthetic events (timeout/
+  interval) should piggyback on the system's I/O polling method without
+  sacraficing trigger resolution.
 * Cascading fd capabilities (sockets have different capabilities than pipes or
   files, and even sockets of different types have major differences).
 * Graceful handling of what should be graceful, and full exception bubble on
