@@ -24,7 +24,7 @@ This is just an experiment. Well, several experiments mixed into one:
 Project Goals
 -------------
 * Modernity: An essentially complient C++11 compiler is required (best get
-  yourself gcc or ming).
+  yourself gcc or mingw).
 * Backwards compatibility: `select()` is still the worst case fallback.
 * Stability: No unexpected but handlable FD error should cause a panic.
 * Security: Things like starvation should not be possible (even at the expense
